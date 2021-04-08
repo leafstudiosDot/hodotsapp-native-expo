@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "hodotsapp-native",
+    "name": "hodots.",
     "slug": "hodotsapp-native",
-    "version": "1.0.0",
+    "version": "0.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,13 +17,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.leafstudiosdot.hodots",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.leafstudiosdot.hodots",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"

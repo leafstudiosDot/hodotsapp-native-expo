@@ -30,7 +30,10 @@ const Header = () => {
                 fontSize: 35,
                 paddingTop: 20,
                 paddingLeft: 15,
+                color: "#FFFFFF",
             }}>☰</Text>
+            
+            
         </View>
     )
 }

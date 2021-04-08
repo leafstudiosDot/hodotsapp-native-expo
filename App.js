@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar, Platform } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, Platform, AppRegistry } from 'react-native';
 import Main from './Main'
 
 export default function App() {
