@@ -7,7 +7,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar 
         animated={true}
-        backgroundColor="#FFFFFF"
+        backgroundColor="#000000"
         barStyle={'light-content'}
         hidden={false}
       />
