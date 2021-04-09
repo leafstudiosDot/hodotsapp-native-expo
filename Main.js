@@ -9,21 +9,25 @@ class Main extends Component {
         super(props);
         this.state = {
             HeaderBarHeight: 63,
-            HeaderBarMarginTop: 15,
+            HeaderBarMarginTop: 0,
+            HeaderBarMarginBottom: 0,
         }
     }
     componentDidMount() {
         if (Platform.OS === 'ios') {
             this.setState({ HeaderBarHeight: 63 })
+            this.setState({ HeaderBarMarginBottom: 10 })
+            this.setState({ HeaderBarMarginTop: 25 })
         } else {
             this.setState({ HeaderBarHeight: 55 })
-            this.setState({ HeaderBarMarginTop: 0 })
+            this.setState({ HeaderBarMarginBottom: 10 })
+            this.setState({ HeaderBarMarginTop: 10 })
         }
     }
     render() {
         return (
             <View>
-                <Header BarHeight={this.state.HeaderBarHeight} marginTopHeader={this.state.HeaderBarMarginTop} />
+                <Header BarHeight={this.state.HeaderBarHeight} marginTopHeader={this.state.HeaderBarMarginTop} marginBottomHeader={this.state.HeaderBarMarginBottom} />
                 <ScrollView>
                     <Text>This is the main page!</Text>
                 </ScrollView>
@@ -39,7 +43,7 @@ const Header = (props) => {
     };
 
     function onProfilePress() {
-        alert("Header!");
+        alert("Profile Header!");
     };
 
     return (
@@ -61,22 +65,33 @@ const Header = (props) => {
                     style={{
                         height: 20,
                         width: 20,
+                        marginTop: 20,
+                        marginLeft: 20,
+                        marginRight: 20,
+                        marginBottom: props.marginBottomHeader,
                         marginTop: props.marginTopHeader,
-                        marginLeft: 15,
                     }}
                     source={MenuIcon} />
             </TouchableHighlight>
 
-            <Image
-                style={{
-                    height: 30,
-                    width: 30,
-                    resizeMode: 'cover',
-                    marginTop: props.marginTopHeader,
-                    marginRight: 10,
-                    borderRadius: 100,
-                }}
-                source={DefPFP} />
+            <TouchableHighlight
+                underlayColor="rgba(168, 168, 168, 0.3)"
+                onPress={() => onProfilePress()}
+            >
+                <Image
+                    style={{
+                        height: 30,
+                        width: 30,
+                        resizeMode: 'cover',
+                        marginTop: 10,
+                        marginLeft: 20,
+                        marginRight: 20,
+                        marginTop: props.marginTopHeader,
+                        marginBottom: props.marginBottomHeader,
+                        borderRadius: 100,
+                    }}
+                    source={DefPFP} />
+            </TouchableHighlight>
         </View>
     )
 }
