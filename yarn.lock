@@ -3003,6 +3003,11 @@ expo-font@~8.4.0:
     fbjs "1.0.0"
     fontfaceobserver "^2.1.0"
 
+expo-in-app-purchases@^10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/expo-in-app-purchases/-/expo-in-app-purchases-10.1.0.tgz#a7d56a394d7b3b9b765ffeb3f93aec0e34bdd50b"
+  integrity sha512-sLhNfzsPRUAydF77/T834h0MApbKBh2fQY7D8JG4BP8kumLw32qGdKQm1IJFuYcl5iHnOsNvvVjfnDYEnbIO8w==
+
 expo-keep-awake@~8.4.0:
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-8.4.0.tgz#346d0988e6364c46050fef4b7829f302ef3e603d"
