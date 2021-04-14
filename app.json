@@ -5,11 +5,6 @@
     "version": "0.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -19,9 +14,18 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.leafstudiosdot.hodots",
-      "buildNumber": "1.0.0"
+      "buildNumber": "0.0.3"
     },
     "android": {
+      "splash": {
+        "ldpi": "./assets/splash/android/ldpi-splash.png",
+        "mdpi": "./assets/splash/android/mdpi-splash.png",
+        "hdpi": "./assets/splash/android/hdpi-splash.png",
+        "xhdpi": "./assets/splash/android/xhdpi-splash.png",
+        "xxhdpi": "./assets/splash/android/xxhdpi-splash.png",
+        "xxxhdpi": "./assets/splash/android/xxxhdpi-splash.png",
+        "resizeMode": "cover"
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
