@@ -1,5 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import { Text, View, ScrollView, Image, Platform, TouchableHighlight } from 'react-native';
+import axios from 'axios';
 import MenuIcon from "./assets/menu/hamburger.png";
 import DefPFP from './assets/user/defaultpicture.png';
 
@@ -24,6 +25,11 @@ class Main extends Component {
             this.setState({ HeaderBarMarginTop: 10 })
         }
     }
+
+    SendAPI() {
+        
+    }
+
     render() {
         return (
             <View>
