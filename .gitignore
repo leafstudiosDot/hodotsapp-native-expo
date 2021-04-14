@@ -10,7 +10,6 @@ npm-debug.*
 *.keystore
 web-build/
 googleapi-key/
-
 # macOS
 .DS_Store
 
